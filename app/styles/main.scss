@@ -1,7 +1,9 @@
-$icon-font-path: '../fonts/';
-$brand-primary: #E51863;
+$icon-font-path:              '../fonts/';
+$brand-primary:               #D83B0F;
 $jumbotron-heading-font-size: 40px;
-$jumbotron-padding: 20px;
+$jumbotron-padding:           20px;
+$font-family-sans-serif:      "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+$headings-font-weight:        bold;
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
@@ -63,6 +65,15 @@ $jumbotron-padding: 20px;
   }
 }
 
+// customized classes for typography
+.clr-success {
+  color: $brand-success;
+}
+
+.clr-danger {
+  color: $brand-danger;
+}
+
 // table of all providers
 .voted-by-col {
   background-color: $brand-primary;
@@ -71,4 +82,26 @@ $jumbotron-padding: 20px;
   & > a {
     color: #fff;
   }
+}
+
+// single provider
+.provider {
+  font-size: 18px;
+  line-height: 2;
+
+  &__btn {
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+
+  &__overview {
+    line-height: 1.6;
+    font-size: 15px;
+  }
+}
+
+// comments
+.comments {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }

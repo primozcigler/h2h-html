@@ -1,1 +1,4 @@
-console.log('\'Allo \'Allo!');
+jQuery( document ).ready( function ( $ ) {
+	// enable tooltips
+	$('[data-toggle="tooltip"]').tooltip();
+} );
